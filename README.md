@@ -1,6 +1,6 @@
 # mattiaCAM
-object detection - image classification web-app
-
 Ammagamma EDUCATION
+object detection - image classification web-app, for educational purpose
 
-modifica mattia
+installa react
+
