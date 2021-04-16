@@ -1,37 +1,56 @@
-import './App.css';
-import ImageDetection from './components/ImageDetection.js';
+import React from 'react';
+import {useState} from 'react';
+import Header from './components/Header.js';
 import RealDetection from './components/RealDetection.js';
-
+import ImageDetection from './components/ImageDetection.js';
+import Footer from './components/Footer.js';
+import './App.css';
 
 function App() {
+
+  const [stateRealDetection, setStateRealDetection] = useState(true);
+  const [stateImageClassification, setStateImageClassification] = useState(false);
+  const [modality, setModality] = useState("Image Classification");
+
+  function change_modality(){
+    if(stateRealDetection){
+      setStateRealDetection(false);
+      setStateImageClassification(true);
+      setModality("Real Detection");
+    }
+    else{
+      setStateRealDetection(true);
+      setStateImageClassification(false);
+      setModality("Image Classification");
+    }
+  }
+
   return (
-    <div className="App vh-100 d-flex flex-column align-items-center text-white">
+    <div id="container">
+        <div className="header">
+          <Header />
+        </div>
+        <div className="d-flex flex-column align-items-center justify-content-center mt-5">
+          <h6 className="text-light">Switch model</h6>
+          <button className="btn btn-outline-light rounded-0 p-2" onClick={change_modality}>{modality}</button>
+        </div>
+        <div className="mt-5">
+          {stateRealDetection && (
+            <RealDetection />
+          )}
+          {stateImageClassification && (
+            <ImageDetection />
+          )}
+        </div>
+        <div id="push">
 
-      <div className="header-app text-center mt-5">
-        <h1><strong>
-          <span className="text-danger">S</span>
-          <span className="yellow">M</span>
-          <span className="text-primary">A</span>
-          <span className="text-light">R</span>
-          <span className="text-success">T</span>
-          <span className="text-danger"> D</span>
-          <span className="yellow">E</span>
-          <span className="text-primary">T</span>
-          <span className="text-light">E</span>
-          <span className="text-success">C</span>
-          <span className="text-danger">T</span>
-          <span className="yellow">I</span>
-          <span className="text-primary">O</span>
-          <span className="text-light">N</span>
-          </strong></h1>
-        <h6><i>REAL-TIME OBJECT DETECTION OR IMAGE ANALYSIS, WHAT IS YOUR CHOICE?</i></h6>
-        <hr/>
-      </div>
-
-      <RealDetection />
-      <ImageDetection />
-
+        </div>
+        <div id="footer">
+          <Footer />
+        </div>
     </div>
+
+
   );
 }
 

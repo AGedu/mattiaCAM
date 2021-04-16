@@ -1,12 +1,21 @@
-body {
+body{
   background-color: black;
   font-family: 'Bungee', cursive;
+  height: 100%;
 }
 
-.yellow{
-  color: #f39f18;
+html{
+  height: 100%;
 }
 
-.imageContainer{
-  background-color: black;
+#container {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -50px;
+}
+
+#footer, #push {
+	height: 50px;
+	clear: both;
 }
