@@ -28,9 +28,9 @@ function App() {
         </div>
         <div className="d-flex flex-column align-items-center justify-content-center mt-5">
           <h6 className="text-light">Choose method</h6>
-          <div className="console-button d-flex flex-row">
-            <button className="btn btn-outline-light rounded-0 p-2" style={{width:150,}} onClick={set_real_detection}>Real</button>
-            <button className="btn btn-outline-light rounded-0 p-2" style={{width:150,}} onClick={set_image_classification}>Image</button>
+          <div className="console-button d-flex flex-column flex-sm-row">
+            <button className="btn btn-outline-light rounded-0 p-2" style={{width:200,}} onClick={set_real_detection}>Real Detection</button>
+            <button className="btn btn-outline-light rounded-0 p-2" style={{width:200,}} onClick={set_image_classification}>Image Classification</button>
           </div>
         </div>
         <div className="mt-5">
