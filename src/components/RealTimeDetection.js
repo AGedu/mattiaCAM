@@ -3,14 +3,6 @@ import * as cocossd from "@tensorflow-models/coco-ssd";
 import Webcam from 'react-webcam';
 
 
-const labelMap = {
-    1:{class:'Person', color:'red'},
-    2:{class:'Thank You', color:'yellow'},
-    3:{class:'I Love You', color:'lime'},
-    4:{class:'Yes', color:'blue'},
-    5:{class:'No', color:'purple'},
-}
-
 function RealTimeDetection(){
 
   const [model, setModel] = useState(null);
