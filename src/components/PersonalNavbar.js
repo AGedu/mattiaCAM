@@ -6,7 +6,7 @@ function PersonalNavbar(){
     <div className="personal-navbar">
       <Navbar bg="light" expand="lg">
         <Navbar.Brand href="#home" className="m-2">
-        MATTIA-CAM
+        AMMAGAMMA
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
       </Navbar>

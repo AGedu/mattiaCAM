@@ -27,9 +27,9 @@ function App() {
           <Header />
         </div>
         <div className="d-flex flex-column align-items-center mt-5">
-          <h6 className="text-light">Choose method</h6>
+          <h6 className="text-light">choose the working mode</h6>
           <div className="console-button d-flex flex-column flex-sm-row">
-            <button className="btn btn-outline-light rounded-0 p-2" disabled={stateRealDetection} style={{width:200,}} onClick={set_real_detection}>Real Time</button>
+            <button className="btn btn-outline-light rounded-0 p-2" disabled={stateRealDetection} style={{width:200,}} onClick={set_real_detection}>Real Time Object Detection</button>
             <button className="btn btn-outline-light rounded-0 p-2" disabled={stateImageClassification} style={{width:200,}} onClick={set_image_classification}>Image Classification</button>
           </div>
         </div>
