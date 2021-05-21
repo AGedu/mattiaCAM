@@ -5,7 +5,7 @@ function RealDetection(){
 
   return(
     <div className="real-detection mt-5">
-      <HeaderDetection type="REAL TIME OBJECT DETECTION" info="FIND OBJECTS INTO YOUR CAMERA" />
+      <HeaderDetection type="REAL TIME MULTI-OBJECT DETECTION" info="FIND OBJECTS INTO YOUR CAMERA" />
       <RealTimeDetection />
     </div>
   )
