@@ -5,7 +5,7 @@ function ImageDetection(){
 
   return(
     <div className="image-detection mt-5">
-      <HeaderDetection type="IMAGE CLASSIFICTION" info="UPLOAD A PHOTO AND LET ME ANALYZE IT"/>
+      <HeaderDetection type="IMAGE CLASSIFICATION" info="UPLOAD A PHOTO AND LET ME ANALYZE IT"/>
       <ImageClassificator />
     </div>
   )
