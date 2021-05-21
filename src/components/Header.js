@@ -3,7 +3,7 @@ function Header(){
 
   return(
       <div className="header">
-        <PersonalNavbar />
+        //<PersonalNavbar />
         <div className="title d-flex flex-column align-items-center mt-5">
           <h1><strong>
             <span className="text-danger">M</span>
