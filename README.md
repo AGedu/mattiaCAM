@@ -1,6 +1,7 @@
 # mattiaCAM
 
 Ammagamma EDUCATION
+
 object detection - image classification web-app, for educational purpose
 
 BREVE DESCRIZIONE DELL'APPLICAZIONE:
